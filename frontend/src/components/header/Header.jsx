@@ -31,7 +31,7 @@ const Header = () => {
         if (document.body.scrollTop > 80) {
             headerRef.current.classList.add("sticky__header");
         } else {
-            headerRef.current.classList.remove("stick__header");
+            headerRef.current.classList.remove("sticky__header");
         }
     };
 
@@ -102,6 +102,7 @@ const Header = () => {
                             </button>
                         </Link>
 
+                        {/* ================= Nav button ================ */}
                         <span
                             className="hover:scale-[1.03] md:hidden"
                             onClick={toggleMenu}
