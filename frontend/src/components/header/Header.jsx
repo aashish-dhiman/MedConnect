@@ -24,8 +24,31 @@ const Navigations = [
 ];
 
 const Header = () => {
+    const headerRef = useRef(null);
+    const menuRef = useRef(null);
+
+    const handleStickyHeader = () => {
+        if (document.body.scrollTop > 80) {
+            headerRef.current.classList.add("sticky__header");
+        } else {
+            headerRef.current.classList.remove("stick__header");
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleStickyHeader);
+        //clean up function
+        return () => {
+            window.removeEventListener("scroll", handleStickyHeader);
+        };
+    });
+
+    const toggleMenu = () => {
+        menuRef.current.classList.toggle("show__menu");
+    };
+
     return (
-        <header className="header flex items-center">
+        <header className="header flex items-center" ref={headerRef}>
             <div className="container">
                 <div className="flex items-center justify-between">
                     {/* ============logo============ */}
@@ -33,7 +56,11 @@ const Header = () => {
                         <img src={logo} alt="logo" className="h-[70px]" />
                     </div>
                     {/* ========= Menu ==========  */}
-                    <div className="navigation">
+                    <div
+                        className="navigation"
+                        onClick={toggleMenu}
+                        ref={menuRef}
+                    >
                         <ul className="menu flex items-center gap-10">
                             {Navigations.map((link, index) => (
                                 <li key={index}>
@@ -41,7 +68,7 @@ const Header = () => {
                                         to={link.path}
                                         className={(navClass) =>
                                             navClass.isActive
-                                                ? "text-primaryColor text-[16px] leading-2 font-[600] "
+                                                ? "text-primaryColor text-[16px] leading-2 font-[600]"
                                                 : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
                                         }
                                     >
@@ -68,14 +95,17 @@ const Header = () => {
 
                         <Link to="/login">
                             <button
-                                className=" bg-primaryColor px-6 py-2 text-white text-[15px] font-[600] h-30px cursor-pointer flex items-center justify-center rounded-[50px]
-                        hover:bg-primaryHover hover:scale-[0.98] transition-all"
+                                className=" bg-primaryColor px-6 py-2 mx-2 text-white text-[14px] font-[600] h-30px cursor-pointer flex items-center justify-center rounded-[50px]
+                        hover:bg-primaryHover hover:scale-[0.98] transition-all :text-[12px]"
                             >
                                 Login
                             </button>
                         </Link>
 
-                        <span className="md:hidden">
+                        <span
+                            className="hover:scale-[1.03] md:hidden"
+                            onClick={toggleMenu}
+                        >
                             <FiMenu className="w-6 h-6 cursor-pointer" />
                         </span>
                     </div>
