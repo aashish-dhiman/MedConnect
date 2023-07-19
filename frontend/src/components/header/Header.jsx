@@ -28,7 +28,10 @@ const Header = () => {
     const menuRef = useRef(null);
 
     const handleStickyHeader = () => {
-        if (document.body.scrollTop > 80) {
+        if (
+            document.body.scrollTop > 80 ||
+            document.documentElement.scrollTop > 80
+        ) {
             headerRef.current.classList.add("sticky__header");
         } else {
             headerRef.current.classList.remove("sticky__header");
@@ -95,8 +98,8 @@ const Header = () => {
 
                         <Link to="/login">
                             <button
-                                className=" bg-primaryColor px-6 py-2 mx-4 text-white text-[14px] font-[600] h-30px cursor-pointer flex items-center justify-center rounded-[50px]
-                        hover:bg-primaryHover hover:scale-[0.98] transition-all"
+                                className="btn__hover bg-primaryColor px-6 py-2 mx-4 text-white text-[14px] font-[600] h-30px cursor-pointer flex items-center justify-center rounded-[50px]
+                        "
                             >
                                 Login
                             </button>

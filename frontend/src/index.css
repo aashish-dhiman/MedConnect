@@ -14,7 +14,11 @@
     }
 
     .btn {
-        @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
+        @apply bg-primaryColor py-[15px] px-[30px] rounded-[50px] text-white font-[600] mt-[38px];
+    }
+
+    .btn__hover {
+        @apply hover:bg-primaryHover hover:scale-[0.98] transition-all;
     }
 
     .heading {
@@ -22,11 +26,15 @@
     }
 
     .text__para {
-        @apply text-[18px] leading-[30px] font-[400] text-textColor mt[-18px];
+        @apply text-[16px] leading-[30px] font-[400] text-textColor mt-[18px];
     }
 
     .header {
         @apply bg-[url("./assets/images/mask.png")] bg-no-repeat bg-center bg-cover w-full h-[70px];
+    }
+
+    .hero__section {
+        @apply bg-[url("./assets/images/hero-bg.png")] bg-no-repeat bg-center bg-cover;
     }
 }
 
@@ -46,6 +54,6 @@
     }
 
     .text__para {
-        @apply text-[16px] leading-7 mt-3;
+        @apply text-[14px] leading-7 mt-3;
     }
 }
