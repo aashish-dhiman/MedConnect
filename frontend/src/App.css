@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,13 +13,13 @@ body {
 
 .sticky__header {
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 8cqmax;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 99999;
     box-shadow: 3px 3px -8px 3px #ddd;
+    backdrop-filter: blur(5px);
 }
 
 @media only screen and (max-width: 768px) {
