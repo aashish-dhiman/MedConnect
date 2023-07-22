@@ -8,6 +8,7 @@ import icon03 from "../assets/images/icon03.png";
 
 import Card from "../components/modals/card";
 import About from "../components/about/About";
+import Services from "../components/services/Services";
 
 const Home = () => {
     const cardItem = [
@@ -144,6 +145,10 @@ const Home = () => {
             {/* ============ About section start ================== */}
             <About />
             {/* ========== About Section Ends =========  */}
+
+            {/* ================ Services section starts ============ */}
+            <Services />
+            {/* =============== Services section ends ================ */}
         </>
     );
 };
