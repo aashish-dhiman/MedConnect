@@ -15,7 +15,7 @@ const Doctors = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 mt-[30px]  ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-[30px] lg:gap-[34px] mt-[30px]  ">
                 {doctors.map((item) => {
                     return <DoctorsCard key={item.id} {...item} />;
                 })}

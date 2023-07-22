@@ -14,7 +14,7 @@ const DoctorsCard = (props) => {
         hospital,
     } = props;
     return (
-        <div className="p-3 md:p-6 lg:p-6">
+        <div className="p-3 mx-auto md:p-6 lg:p-6 w-fit">
             <div>
                 <img src={photo} alt="doctor image" className="rounded-xl" />
             </div>
