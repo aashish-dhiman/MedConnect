@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 const ServicesCard = (props) => {
     const { name, desc } = props;
     return (
-        <div className="py-[10px] px-3">
+        <div className="py-[10px] px-3 text-center">
             <h2 className="text-[24px] leading-9 text-headingColor font-[700] ">
                 {name}
             </h2>
