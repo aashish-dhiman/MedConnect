@@ -13,7 +13,7 @@ body {
 
 .sticky__header {
     width: 100%;
-    height: 8cqmax;
+    height: 80px;
     position: sticky;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@ body {
     .navigation {
         margin-left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
