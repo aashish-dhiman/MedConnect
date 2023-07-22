@@ -28,8 +28,6 @@ const ServicesCard = (props) => {
 ServicesCard.propTypes = {
     name: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
-    bgColor: PropTypes.string.isRequired,
-    textColor: PropTypes.string.isRequired,
 };
 
 export default ServicesCard;

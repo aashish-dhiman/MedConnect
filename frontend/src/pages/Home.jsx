@@ -10,6 +10,7 @@ import Card from "../components/modals/card";
 import About from "../components/about/About";
 import Services from "../components/services/Services";
 import Features from "../components/features/Features";
+import Doctors from "../components/doctors/Doctors";
 
 const Home = () => {
     const cardItem = [
@@ -155,6 +156,11 @@ const Home = () => {
             <Features />
 
             {/* =============== Features Section Ends ============= */}
+
+            {/* =============== Our Great Doctors ============ */}
+            <Doctors />
+
+            {/* ============= Our Great Doctor end ========= */}
         </>
     );
 };
