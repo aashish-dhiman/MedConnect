@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.html",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist",
+                "outputDir": "build"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(favicon.ico|robots.txt|sitemap.xml)",
+            "dest": "/$1"
+        },
+        {
+            "src": "/assets/(.*)",
+            "dest": "/dist/assets/$1"
+        },
+        {
+            "src": ".*",
+            "dest": "/index.html"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/(.*)",
+            "destination": "https://your-api-server.com/$1"
+        }
+    ]
+}
