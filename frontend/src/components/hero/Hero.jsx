@@ -56,14 +56,14 @@ const Hero = () => {
 
                     {/* ============= hero images ============ */}
                     <div className="flex gap-[20px] flex-col w-full mt-5">
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-end">
                             <img
                                 src={heroImg01}
                                 alt="doctor picture"
                                 className=" rounded-xl w-[80%] "
                             />
                         </div>
-                        <div className="flex flex-row justify-center gap-[20px]">
+                        <div className="flex flex-row justify-start gap-[20px]">
                             <img
                                 src={heroImg02}
                                 alt="doctor picture"
