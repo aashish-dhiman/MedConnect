@@ -11,6 +11,7 @@ import About from "../components/about/About";
 import Services from "../components/services/Services";
 import Features from "../components/features/Features";
 import Doctors from "../components/doctors/Doctors";
+import Faq from "../components/faq/Faq";
 
 const Home = () => {
     const cardItem = [
@@ -161,6 +162,11 @@ const Home = () => {
             <Doctors />
 
             {/* ============= Our Great Doctor end ========= */}
+
+            {/* ======== Faq section start ======= */}
+            <Faq />
+
+            {/* ======== Faq section end ======= */}
         </>
     );
 };
