@@ -33,6 +33,10 @@
         @apply bg-[url("./assets/images/mask.png")] bg-no-repeat bg-center bg-cover w-full h-[70px];
     }
 
+    .footer {
+        @apply bg-[url("./assets/images/blur.png")] bg-no-repeat bg-center bg-cover w-full;
+    }
+
     .hero__section {
         @apply bg-[url("./assets/images/hero-bg.png")] bg-no-repeat bg-center bg-cover;
     }
