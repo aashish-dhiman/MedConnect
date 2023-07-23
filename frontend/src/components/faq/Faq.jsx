@@ -7,7 +7,7 @@ const Faq = () => {
         <section>
             <div className="container">
                 <div className="flex justify-between">
-                    <div className=" w-[30%] hidden md:block lg:block my-auto">
+                    <div className=" w-[30%] hidden md:block lg:block my-[100px]">
                         <img
                             src={faqImg}
                             alt="faq image"
