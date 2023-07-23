@@ -6,12 +6,14 @@ import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 
+// =========== Components ===============
 import Card from "../components/modals/card";
 import About from "../components/about/About";
 import Services from "../components/services/Services";
 import Features from "../components/features/Features";
 import Doctors from "../components/doctors/Doctors";
 import Faq from "../components/faq/Faq";
+import Testimonial from "../components/testimonial/Testimonial";
 
 const Home = () => {
     const cardItem = [
@@ -167,6 +169,11 @@ const Home = () => {
             <Faq />
 
             {/* ======== Faq section end ======= */}
+
+            {/* ======== Testimonial section start ======= */}
+            <Testimonial />
+
+            {/* ======== Testimonial section end ======= */}
         </>
     );
 };

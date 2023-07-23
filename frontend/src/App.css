@@ -22,6 +22,14 @@ body {
     backdrop-filter: blur(5px);
 }
 
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .navigation {
         margin-left: 0;
