@@ -34,7 +34,7 @@
     }
 
     .footer {
-        @apply bg-[url("./assets/images/blur.png")] bg-no-repeat bg-center bg-cover w-full;
+        @apply bg-[url("./assets/images/Blur.png")] bg-no-repeat bg-center bg-cover w-full;
     }
 
     .hero__section {
